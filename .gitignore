@@ -1,6 +1,2 @@
 __pycache__/
-*.pkl
-*.h5
-*.csv
-static/images/
 archive/
