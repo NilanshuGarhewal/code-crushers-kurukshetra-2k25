@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PhishShield Result</title>
     <!-- CSS link -->
-    <link rel="stylesheet" href="../static/home.css" />
+    <link rel="stylesheet" href="../static/result.css" />
 
     <!-- Font awesome CDN link -->
     <link
@@ -31,36 +31,16 @@
     </div>
 
     <section class="container">
-      <div class="thought">Guarding Your Clicks,<br />Securing Your World!</div>
-
-      <!-- <div class="input">
-        <form action="/phishshield" method="POST">
-          <input
-            type="text"
-            name="url"
-            id="urlInput"
-            placeholder="enter email / url..."
-            required
-          />
-          <button>
-            <i class="fa-solid fa-arrow-right"> </i>
-          </button>
-        </form>
-      </div>
-
-      <br /> -->
       <div class="input-2">
         <form action="/phishshield" method="POST">
-          <input
-            type="text"
+          <textarea
             name="url"
             id="urlInput"
+            class="new"
             placeholder="enter email or url..."
             required
-          />
-          <button>
-            <i class="fa-solid fa-arrow-right"> </i>
-          </button>
+          ></textarea>
+          <button>Send</button>
         </form>
       </div>
 
@@ -74,8 +54,8 @@
           <strong
             class="{% if prediction == 1 %}phishing{% else %}legitimate{% endif %}"
           >
-            {% if prediction == 1 %} This INPUT is likely a phishing site! {% else
-            %} This INPUT appears to be legitimate. {% endif %}
+            {% if prediction == 1 %} This INPUT is likely a phishing site! {%
+            else %} This INPUT appears to be legitimate. {% endif %}
           </strong>
         </p>
         <br />
