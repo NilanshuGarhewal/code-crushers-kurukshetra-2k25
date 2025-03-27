@@ -55,7 +55,7 @@
   
       .new {
        width: 600px;
-       background-color: #ffffff3a !important;
+       background-color: #ffffff2a !important;
        outline: none;
        border: none;
         border-radius: 10px;
@@ -93,6 +93,18 @@
     /* flex-wrap: wrap; */
     max-height: 550px;
     overflow: scroll;
+  }
+
+  .output-section-2 {
+    margin: 20px 0 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff2a;
+    height: 50px;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
   }
   
   #redirect {

@@ -40,7 +40,6 @@ body {
 }
 
 .input-2 {
-
   margin-top: 20px;
 
   form {
@@ -51,14 +50,14 @@ body {
     padding: 0;
 
     .new {
-     width: 600px;
-     background-color: #ffffff3a !important;
-     outline: none;
-     border: none;
+      width: 600px;
+      background-color: #ffffff2a !important;
+      outline: none;
+      border: none;
       border-radius: 10px;
-      padding: 20px;
-     height: 400px;
-     color: white;
+      padding: 20px 30px;
+      height: 400px;
+      color: white;
     }
 
     button {

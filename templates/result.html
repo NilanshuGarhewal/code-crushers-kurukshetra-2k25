@@ -44,22 +44,26 @@
         </form>
       </div>
 
-      <div class="output-section">
-        <p>Result</p>
-        <br />
-        <p>Input: {{ result }}</p>
-        <br />
-        <p>
-          Detection Result:
-          <strong
-            class="{% if prediction == 1 %}phishing{% else %}legitimate{% endif %}"
-          >
-            {% if prediction == 1 %} This INPUT is likely a phishing site! {%
-            else %} This INPUT appears to be legitimate. {% endif %}
-          </strong>
-        </p>
-        <br />
-        <a id="redirect" href="/">Refresh</a>
+      <div class="contains">
+        <div class="output-section">
+          <h3>Result</h3>
+          <br />
+          <p>Input: {{ result }}</p>
+          <br />
+        </div>
+        <div class="output-section-2">
+          <p>
+            Detection Result:
+            <strong
+              class="{% if prediction == 1 %}phishing{% else %}legitimate{% endif %}"
+            >
+              {% if prediction == 1 %} This INPUT is likely a phishing site! {%
+              else %} This INPUT appears to be legitimate. {% endif %}
+            </strong>
+          </p>
+          <br />
+          <a id="redirect" href="/">Refresh</a>
+        </div>
       </div>
     </section>
 
